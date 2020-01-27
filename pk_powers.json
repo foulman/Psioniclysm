@@ -1,0 +1,287 @@
+[
+  {
+  "id": "pk_enhance1",
+  "type": "SPELL",
+  "name": "PK Enhance I",
+  "description": "The most basic Psychokinetic ability, affecting your own body. This ability enhances your phyiscal strength by consciously applying your psychokinetic powers, eventually this can become an subconscious activity.  A great base to expand into manipulating objects without your body between your mind and the object.",
+  "message": "You focus your mind on your own body, if you believe you are stronger, you are.",
+  "sound_description": "",
+  "learn_spells": { "pk_fist1": 2, "pk_defense1": 3, "pk_ehnance2": 4, "pk_slow1": 5 },
+  "effect": "target_attack",
+  "effect_str": "pk_eff_enhance1",
+  "min_duration": 10000,
+  "duration_increment": 30000,
+  "max_duration": 90000,
+  "base_casting_time": 300,
+  "final_casting_time": 300,
+  "base_energy_cost": 100,
+  "final_energy_cost": 100,
+  "spell_class": "PSION_PK",
+  "energy_source": "MANA",
+  "max_level": 5,
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "CONCENTRATE"
+  ]
+  },
+  {
+    "type": "effect_type",
+    "id": "pk_eff_enhance1",
+    "name": [ "PK Enhancement - Strength" ],
+    "desc": [ "You apply your psychokinesis to enhancing your physical strength." ],
+    "apply_message": "You apply your psychokinesis to enhancing your physical strength!",
+    "decay_messages": "Your concentration over your power fades.  Your strength returns to normal" ,
+    "rating": "good",
+    "max_intensity": 1,
+    "base_mods": { "str_mod": [ 3 ] }
+  },
+  {
+    "id": "pk_fist1",
+	"type": "SPELL",
+	"name": "PK Fist",
+	"description": "Focused Psychokinetic energy around your fists and feet for unarmed combat",
+	"message": "you focus your mind and use your %s power",
+	"valid_targets": [ "self" ],
+	"effect": "spawn_item",
+	"effect_str": "pk_fist_item1",
+	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
+	"spell_class": "PSION_PK",
+	"energy_source": "MANA",
+	"difficulty": 0,
+	"max_level": 5,
+	"base_casting_time": 100,
+    "final_casting_time": 100,
+	"base_energy_cost": 100,
+    "final_energy_cost": 100,
+	"min_damage": 1,
+	"min_duration": 3000,
+	"max_duration": 10000,
+	"duration_increment": 2000
+  },
+  {
+    "type": "GENERIC",
+    "id": "pk_fist_item1",
+    "symbol": "3",
+    "color": "dark_gray",
+    "name": { "str": "PK Fist", "str_pl": "pairs of PK Fists" },
+    "description": "A focused area of psychokinetic energy, specifically focused on your fists.  A good, quick weapon - but you have to get within punching range to use it.",
+    "volume": "250 ml",
+    "weight": "430 g",
+    "qualities": [ [ "HAMMER", 1 ] ],
+    "bashing": 8,
+    "flags": [ "UNARMED_WEAPON", "UNBREAKBLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID" ]
+  },
+  {
+    "id": "pk_defense1",
+	"type": "SPELL",
+	"name": "PK Defense Field",
+	"description": "This ability expands your focused psychokinetic power to surround your body in an aura, deflecting or at least reducing impacts and damage.",
+	"message": "you focus your mind and use your %s power",
+	"valid_targets": [ "self" ],
+	"effect": "spawn_item",
+	"effect_str": "pk_defense1_aura",
+	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
+	"spell_class": "PSION_PK",
+	"energy_source": "MANA",
+	"difficulty": 0,
+	"max_level": 5,
+	"base_casting_time": 200,
+    "final_casting_time": 200,
+	"base_energy_cost": 200,
+    "final_energy_cost": 200,
+	"min_damage": 1,
+	"min_duration": 6000,
+	"max_duration": 30000,
+	"duration_increment": 6000
+  },
+  {
+    "id": "pk_defense1_aura",
+    "type": "ARMOR",
+    "symbol": "[",
+    "color": "dark_gray",
+    "name": "psychokinetic defensive aura",
+    "description": "A psychokinetic field covering your body that protects you from some minor harm.",
+    "flags": [ "OVERSIZE", "TRADER_AVOID", "AURA", "SEMITANGIBLE", "NO_REPAIR", "NO_SALVAGE" ],
+    "encumbrance": 0,
+	"relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+          "values": [ { "value": "ARMOR_CUT", "add": -3 }, { "value": "ARMOR_BASH", "add": -3 }, { "value": "ARMOR_STAB", "add": -3 } ]
+        }
+      ]
+    }
+  },
+  {
+  "id": "pk_enhance2",
+  "type": "SPELL",
+  "name": "PK Enhance II",
+  "description": "The most basic Psychokinetic ability, affecting your own body. This ability enhances your phyiscal strength by consciously applying your psychokinetic powers, eventually this can become an subconscious activity.  A great base to expand into manipulating objects without your body between your mind and the object.",
+  "message": "You focus your mind on your own body, if you believe you are stronger, you are.",
+  "sound_description": "",
+  "effect": "target_attack",
+  "effect_str": "pk_eff_enhance2",
+  "min_duration": 10000,
+  "duration_increment": 30000,
+  "max_duration": 90000,
+  "base_casting_time": 300,
+  "final_casting_time": 300,
+  "base_energy_cost": 200,
+  "final_energy_cost": 200,
+  "spell_class": "PSION_PK",
+  "energy_source": "MANA",
+  "max_level": 5,
+  "valid_targets": [
+    "self"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "CONCENTRATE"
+  ]
+  },
+  {
+    "type": "effect_type",
+    "id": "pk_eff_enhance2",
+    "name": [ "PK Enhancement - Speed & Agility" ],
+    "desc": [ "You apply your psychokinesis to enhancing your physical speed and agility." ],
+    "apply_message": "You apply your psychokinesis to enhancing your physical speed and agility!",
+    "decay_messages": "Your concentration over your power fades.  Your speed and agility return to normal" ,
+    "rating": "good",
+    "max_intensity": 1,
+    "base_mods": { "dex_mod": [ 2 ], "speed_mod": [ 10 ] }
+  },
+  {
+    "id": "pk_slow1",
+	"type": "SPELL",
+	"name": "PK Slow I",
+	"description": "This is a template to show off all the available values",
+	"message": "you focus your mind and use your %s power",
+	"valid_targets": [ "hostile", "ally" ],
+	"effect": "target_attack",
+	"effect_str": "pk_slow_eff",
+	"learn_spells": { "pk_hold1": 3 },
+	"flags": [ "IGNORE_WALLS", "SILENT", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
+	"spell_class": "PSION_PK",
+	"energy_source": "MANA",
+	"difficulty": 0,
+	"max_level": 10,
+	"base_casting_time": 100,
+    "final_casting_time": 100,
+	"base_energy_cost": 100,
+    "final_energy_cost": 100,
+	"min_range": 1,
+	"max_range": 10,
+	"range_increment": 2,
+	"min_duration": 200,
+	"max_duration": 1000,
+	"duration_increment": 200
+  },
+  {
+    "type": "effect_type",
+    "id": "pk_slow_eff",
+    "name": [ "PK Slowing" ],
+    "desc": [ "Ghostly arms are trying to hold you in place!" ],
+    "max_intensity": 4,
+    "int_add_val": 1,
+    "apply_message": "Ethereal arms shoot out of the ground and grab onto you!",
+    "remove_message": "The ghostly arms fade away.",
+    "base_mods": { "speed_mod": [ -40 ] },
+    "scaling_mods": { "speed_mod": [ -10 ] }
+  },
+  {
+  "id": "pk_hold1",
+  "type": "SPELL",
+  "name": "PK Hold I",
+  "description": "You reach out with your mind and attempt to stop another creature's movement.",
+  "message": "You reach out with your mind and attempt to hold your foe still",
+  "sound_description": "",
+  "learn_spells": { "pk_squeeze": 3 },
+  "effect": "mod_moves",
+  "min_damage": -300,
+  "damage_increment": -200.0,
+  "max_damage": -2000,
+  "min_range": 2,
+  "range_increment": 1.0,
+  "max_range": 12,
+  "min_duration": 1000,
+  "duration_increment": 500,
+  "max_duration": 6000,
+  "base_energy_cost": 100,
+  "spell_class": "PSION_PK",
+  "difficulty": 0,
+  "max_level": 5,
+  "base_casting_time": 100,
+  "valid_targets": [
+    "hostile"
+  ],
+  "flags": [
+    "SILENT",
+    "NO_HANDS",
+    "NO_LEGS",
+    "CONCENTRATE"
+  ]
+  },
+  {
+    "id": "pk_squeeze",
+	"type": "SPELL",
+	"name": "PK Squeeze",
+	"description": "Psychokinetic power applied to squeeze a target, causing crushing damage and pinnning them in place.  A rudimentary and clumsy attack at first, but after some training it becomes quite effective.",
+	"message": "you focus your mind and use your %s power",
+	"valid_targets": [ "hostile", "ally" ],
+	"effect": "target_attack",
+	"effect_str": "tied",
+	"flags": [ "IGNORE_WALLS", "SILENT", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
+	"spell_class": "PSION_PK",
+	"energy_source": "MANA",
+	"difficulty": 0,
+	"max_level": 10,
+	"base_casting_time": 100,
+    "final_casting_time": 100,
+	"base_energy_cost": 100,
+    "final_energy_cost": 100,
+	"min_damage": 10,
+	"max_damage": 100,
+	"damage_increment": 10,
+	"damage_type": "bash",
+	"min_range": 5,
+	"max_range": 15,
+	"range_increment": 1,
+	"min_duration": 300,
+	"max_duration": 1000,
+	"duration_increment": 100
+  },
+  {
+  "id": "pk_pull",
+  "type": "SPELL",
+  "name": "PK Pull",
+  "description": "pull items",
+  "effect": "area_pull",
+  "min_aoe": 3,
+  "aoe_increment": 1.0,
+  "max_aoe": 10,
+  "base_casting_time": 100,
+  "effect_targets": [
+    "item"
+  ],
+  "valid_targets": [
+    "item"
+  ],
+  "flags": [
+    "NO_HANDS",
+    "NO_LEGS",
+    "CONCENTRATE"
+  ]
+}
+
+
+
+
+]

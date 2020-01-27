@@ -1,0 +1,28 @@
+[
+  {
+    "type": "profession",
+    "ident": "awakened_pk",
+    "name": "Awakened Psychokinetic",
+    "description": "You have broken open the barriers of your mind and are learning to manipulate objects with a thought.  Do not put any points into spellcraft!",
+    "points": 1,
+	"traits": [ "PSION_PK" ],
+	"skills": [ { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [
+          "jeans",
+          "tshirt",
+		  "hoodie",
+          "socks",
+          "pockknife",
+          "mbag",
+          "sneakers",
+          "wristwatch"
+        ],
+        "entries": [ { "group": "charged_cell_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
+  }
+]

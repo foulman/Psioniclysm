@@ -1,0 +1,15 @@
+[
+  {
+    "type": "mutation",
+    "id": "PSION_PK",
+    "name": "Awakened Psychokinetic",
+    "points": 0,
+    "description": "Psychokinetic powers within you have been awakened.",
+    "starting_trait": false,
+    "purifiable": false,
+    "valid": false,
+    "spells_learned": [ [ "pk_enhance1", 1 ] ]
+  }
+
+
+]
