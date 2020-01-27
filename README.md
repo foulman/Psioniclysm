@@ -15,3 +15,5 @@ Also included are several crafting recipes that will handle the 'Psicraft' skill
 
 These are time consuming crafting recipes that will not train your skill in and of themseves, but trust me, they're worth it. 
 Once you have completed the craft, you can unpack the item and recieve a skill book and an upgrade item or two, examine them and do what they say. Once your skill is up, you will see another crafting recipe for the next level. 
+
+Oh! And for the time being, unfortunately, you will not be able to use this alongside Magiclysm or Arcana (I mean.. you could.. but it would screw up the balance completely), there are code changes in the works that should address this soon. My apologies, but it's unavoidable.
