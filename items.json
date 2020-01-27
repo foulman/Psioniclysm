@@ -16,7 +16,7 @@
     "id": "psi_upgrade_1",
     "type": "GENERIC",
     "copy-from": "psi_upgrade",
-	"category": "drugs",
+    "category": "drugs",
     "name": "Psionic Upgrade to Psicraft 2",
     "description": "A sadly required meta item, activate to unpack into materials to handle upgrading your psionic abilities."
   },
@@ -24,10 +24,7 @@
     "result": "psi_upgrade_1",
     "type": "uncraft",
     "time": "6 s",
-    "components": [
-      [ [ "book_psi_1", 1 ] ],
-	  [ [ "pk_aura_hammer", 1 ] ]
-    ],
+    "components": [ [ [ "book_psi_1", 1 ] ], [ [ "pk_aura_hammer", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -61,7 +58,7 @@
     "id": "psi_upgrade_2",
     "type": "GENERIC",
     "copy-from": "psi_upgrade",
-	"category": "drugs",
+    "category": "drugs",
     "name": "Psionic Upgrade to Psicraft 3",
     "description": "A sadly required meta item, activate to unpack into materials to handle upgrading your psionic abilities."
   },
@@ -69,10 +66,7 @@
     "result": "psi_upgrade_2",
     "type": "uncraft",
     "time": "6 s",
-    "components": [
-      [ [ "book_psi_2", 1 ] ],
-	  [ [ "pk_aura_crowbar", 1 ] ]
-    ],
+    "components": [ [ [ "book_psi_2", 1 ] ], [ [ "pk_aura_crowbar", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -106,7 +100,7 @@
     "id": "psi_upgrade_3",
     "type": "GENERIC",
     "copy-from": "psi_upgrade",
-	"category": "drugs",
+    "category": "drugs",
     "name": "Psionic Upgrade to Psicraft 4",
     "description": "A sadly required meta item, activate to unpack into materials to handle upgrading your psionic abilities."
   },
@@ -114,10 +108,7 @@
     "result": "psi_upgrade_3",
     "type": "uncraft",
     "time": "6 s",
-    "components": [
-      [ [ "book_psi_3", 1 ] ],
-	  [ [ "pk_aura_wrench", 1 ] ]
-    ],
+    "components": [ [ [ "book_psi_3", 1 ] ], [ [ "pk_aura_wrench", 1 ] ] ],
     "flags": [ "BLIND_EASY" ]
   },
   {
@@ -146,8 +137,4 @@
     "qualities": [ [ "WRENCH", 2 ] ],
     "flags": [ "AURA", "TRADER_AVOID", "NO_SALVAGE", "PSEUDO" ]
   }
-
-
-
-
 ]
