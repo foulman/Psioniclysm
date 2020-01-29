@@ -6,7 +6,7 @@
     "description": "The most basic Psychokinetic ability, affecting your own body. This ability enhances your phyiscal strength by consciously applying your psychokinetic powers, eventually this can become an subconscious activity.  A great base to expand into manipulating objects without your body between your mind and the object.",
     "message": "You focus your mind on your own body, if you believe you are stronger, you are.",
     "sound_description": "",
-    "learn_spells": { "pk_fist1": 2, "pk_defense1": 3, "pk_ehnance2": 4, "pk_slow1": 5 },
+    "learn_spells": { "pk_fist1": 2, "pk_defense1": 3, "pk_enhance2": 4, "pk_slow1": 5 },
     "effect": "target_attack",
     "effect_str": "pk_eff_enhance1",
     "min_duration": 10000,
