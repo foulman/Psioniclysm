@@ -15,5 +15,22 @@
       "male": [ "briefs" ],
       "female": [ "bra", "panties" ]
     }
+  },
+  {
+    "type": "profession",
+    "ident": "awakened_ek",
+    "name": "Awakened Electrokinetic",
+    "description": "You have broken open the barriers of your mind and are learning to manipulate electricity with a thought.  Do not put any points into spellcraft!",
+    "points": 1,
+    "traits": [ "PSION_EK" ],
+    "skills": [ { "level": 1, "name": "spellcraft" } ],
+    "items": {
+      "both": {
+        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch" ],
+        "entries": [ { "group": "charged_cell_phone" } ]
+      },
+      "male": [ "briefs" ],
+      "female": [ "bra", "panties" ]
+    }
   }
 ]
