@@ -336,6 +336,7 @@
 	"name": "Generate Charge",
 	"description": "The electrokineticist can, with a thought, gather ambient electrical energy together and store it in a suitabile container, usually a battery.  It should be stored quickly or it will dissapate.",
 	"message": "You concentrate and gather ambient electricity from all around you.",
+	"learn_spells": { "ek_discharge": 2, "ek_shockfield": 3, "ek_electrofield": 4, "ek_emp_touch": 5 },
 	"valid_targets": [ "self" ],
 	"effect": "spawn_item",
 	"effect_str": "battery",
@@ -351,8 +352,26 @@
 	"min_damage": 100,
 	"max_damage": 500,
 	"damage_increment": 100,
-	"min_duration": 3000,
-	"max_duration": 3000
+	"min_duration": 90000,
+	"max_duration": 90000
+  },
+  {
+    "id": "fd_shocking",
+    "type": "field_type",
+    "legacy_enum_id": 19,
+    "intensity_levels": [
+      { "name": "sparks", "sym": "9", "dangerous": true, "light_emitted": 0.01 },
+      { "name": "electric crackle", "color": "cyan", "light_emitted": 4 },
+      { "name": "electric cloud", "color": "blue", "light_emitted": 20 }
+    ],
+    "description_affix": "illuminated_by",
+    "has_elec": true,
+    "priority": 4,
+    "half_life": "2 turns",
+    "phase": "plasma",
+    "display_items": false,
+    "display_field": true,
+	"immunity_data": { "traits": [ "PSION_EK" ] }
   },
   {
     "id": "ek_discharge",
@@ -360,10 +379,11 @@
 	"name": "Discharge",
 	"description": "A very inefficient brute force release of raw electrical power, delivered by touch.",
 	"message": "You gather power for a split second and then release it as a brute force electrical touch attack!",
+	"learn_spells": { "ek_shockfist": 3 },
 	"valid_targets": [ "hostile", "ally" ],
 	"effect": "target_attack",
 	"effect_str": "shocked",
-	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
+	"flags": [ "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
 	"spell_class": "PSION_EK",
 	"energy_source": "MANA",
 	"difficulty": 0,
@@ -401,24 +421,6 @@
     "show_in_info": true
   },
   {
-    "id": "fd_shocking",
-    "type": "field_type",
-    "legacy_enum_id": 19,
-    "intensity_levels": [
-      { "name": "sparks", "sym": "9", "dangerous": true, "light_emitted": 0.01 },
-      { "name": "electric crackle", "color": "cyan", "light_emitted": 4 },
-      { "name": "electric cloud", "color": "blue", "light_emitted": 20 }
-    ],
-    "description_affix": "illuminated_by",
-    "has_elec": true,
-    "priority": 4,
-    "half_life": "2 turns",
-    "phase": "plasma",
-    "display_items": false,
-    "display_field": true,
-	"immunity_data": { "traits": [ "PSION_EK" ] },
-  },
-  {
     "id": "ek_shockfist",
 	"type": "SPELL",
 	"name": "Shock Fist",
@@ -449,10 +451,56 @@
     "color": "light_blue",
     "name": { "str": "Shock Fist", "str_pl": "pairs of Shock Fists" },
     "description": "A focused area of crackling electrical energy, specifically focused on your hands.",
-    "volume": "250 ml",
-    "weight": "430 g",
+    "volume": "100 ml",
+    "weight": "100 g",
     "melee_damage": [ { "damage_type": "electric", "amount": 14 } ],
     "flags": [ "UNARMED_WEAPON", "UNBREAKBLE_MELEE", "NONCONDUCTIVE", "TRADER_AVOID", "LIGHT_4" ]
+  },
+  {
+    "id": "ek_shockfield",
+	"type": "SPELL",
+	"name": "Shockfield",
+	"description": "This power generates and maintains a field of electricity around your body, anything hitting you is struck with a jolt of electricity.  This jolt tends to reduce the damage done to you by a small amount as well, as no solid contact can be made without instant backlash.",
+	"message": "You gather electricity around you and hold it into place to shield your body and shock any who would dare touch you.",
+	"valid_targets": [ "self" ],
+	"effect": "spawn_item",
+	"effect_str": "ek_shockfield_item1",
+	"learn_spells": { "ek_crackling_aura": 4 },
+	"flags": [ "SILENT", "NO_HANDS", "NO_LEGS", "CONCENTRATE" ],
+	"spell_class": "PSION_PK",
+	"energy_source": "MANA",
+	"difficulty": 0,
+	"max_level": 5,
+	"base_casting_time": 400,
+    "final_casting_time": 400,
+	"base_energy_cost": 300,
+    "final_energy_cost": 300,
+	"min_damage": 1,
+	"max_damage": 1,
+	"min_duration": 3000,
+	"max_duration": 9000,
+	"duration_increment": 1500
+  },
+  {
+    "id": "ek_shockfield_item1",
+    "type": "ARMOR",
+    "symbol": "[",
+    "color": "light_blue",
+    "name": "electrokinetic shockfield",
+    "description": "An electrokinetic field covering your body that protects you from some minor harm and shocks the hell out of any that make contact with you, or that you make contact with.",
+    "flags": [ "OVERSIZE", "TRADER_AVOID", "AURA", "SEMITANGIBLE", "NO_REPAIR", "NO_SALVAGE", "ONLY_ONE" ],
+    "encumbrance": 0,
+    "relic_data": {
+      "passive_effects": [
+        {
+          "has": "WORN",
+          "condition": "ALWAYS",
+		  "hit_you_effect": [ { "id": "ek_discharge" } ],
+          "hit_me_effect": [ { "id": "ek_discharge" } ],
+          "values": [ { "value": "ARMOR_CUT", "add": -2 }, { "value": "ARMOR_BASH", "add": -2 }, { "value": "ARMOR_STAB", "add": -2 } ]
+        }
+      ]
+    }
   }
   
   
