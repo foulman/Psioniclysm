@@ -1,5 +1,39 @@
 [
   {
+    "type": "tool_quality",
+    "id": "PK",
+    "name": "Psychokinetic"
+  },
+  {
+    "id": "pk_marker",
+    "type": "TOOL_ARMOR",
+    "symbol": "*",
+    "color": "red",
+    "name": "PK Marker",
+    "description": "This is a placeholder object to determine what class you are for crafting purposes.  You can't drop it.",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "qualities": [ [ "PK", 1 ] ],
+    "flags": [ "PERSONAL", "TRADER_AVOID", "NO_SALVAGE", "PSEUDO", "NO_TAKEOFF", "NO_REPAIR" ]
+  },
+  {
+    "type": "tool_quality",
+    "id": "EK",
+    "name": "Electrokinetic"
+  },
+  {
+    "id": "ek_marker",
+    "type": "TOOL_ARMOR",
+    "symbol": "*",
+    "color": "red",
+    "name": "EK Marker",
+    "description": "This is a placeholder object to determine what class you are for crafting purposes.  You can't drop it.",
+    "volume": "1 ml",
+    "weight": "1 g",
+    "qualities": [ [ "EK", 1 ] ],
+    "flags": [ "PERSONAL", "TRADER_AVOID", "NO_SALVAGE", "PSEUDO", "NO_TAKEOFF", "NO_REPAIR" ]
+  },
+  {
     "abstract": "psi_upgrade",
     "type": "GENERIC",
     "category": "drugs",

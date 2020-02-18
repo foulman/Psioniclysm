@@ -9,7 +9,7 @@
     "skills": [ { "level": 1, "name": "spellcraft" } ],
     "items": {
       "both": {
-        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch" ],
+        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch", "pk_marker" ],
         "entries": [ { "group": "charged_cell_phone" } ]
       },
       "male": [ "briefs" ],
@@ -26,7 +26,7 @@
     "skills": [ { "level": 1, "name": "spellcraft" } ],
     "items": {
       "both": {
-        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch" ],
+        "items": [ "jeans", "tshirt", "hoodie", "socks", "pockknife", "mbag", "sneakers", "wristwatch", "ek_marker" ],
         "entries": [ { "group": "charged_cell_phone" } ]
       },
       "male": [ "briefs" ],
