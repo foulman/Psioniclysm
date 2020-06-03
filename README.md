@@ -11,9 +11,10 @@ The way this works is, the more you practice your powers (via the spellcasting k
 
 Powers will branch out from there, the more you use your powers, the more they will grow.
 
-Also included are several crafting recipes that will handle the 'Psicraft' skill upgrading, for the time being this is the best method I can come up with, as I can't exactly have you powerleveling your psionic powers by reading a book on 'Mentalism' now can I?
+Also included are several crafting recipes that will handle the 'Psicraft' skill upgrading, for the time being this is the best method I can come up with, as I can't exactly have you powerleveling your psionic powers by reading a book on 'Mentalism' now can I (Watchmen reference!)?
 
 These are time consuming crafting recipes that will not train your skill in and of themseves, but trust me, they're worth it. 
-Once you have completed the craft, you can unpack the item and recieve a skill book and an upgrade item or two, examine them and do what they say. Once your skill is up, you will see another crafting recipe for the next level. 
+Once you have completed the craft, you can unpack the item and recieve a skill book and an upgrade item or two, examine them and do what they say. Once your skill is up, you will see another crafting recipe for the next level. I had to add a rock in there for some volume/weight, sorry about that. I'm sure you can find a rock.
 
-Oh! And for the time being, unfortunately, you will not be able to use this alongside Magiclysm or Arcana (I mean.. you could.. but it would screw up the balance completely), there are code changes in the works that should address this soon. My apologies, but it's unavoidable. Also, as it says in the profession: do not put any points into Spellcraft. That would screw with the progression.
+Oh! And for the time being, unfortunately, you cannot use the Electrokinetic, it's incomplete and not intended for use. 
+Also, as it says in the profession: do not put any points into Psicraft. That would screw with the progression.

@@ -4,32 +4,35 @@
     "result": "psi_upgrade_1",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
-    "skills_required": [ "spellcraft", 1 ],
+    "skills_required": [ "psicraft", 1 ],
+	"components": [ [ [ "rock", 1 ] ] ],
     "difficulty": 0,
     "time": "24 h",
     "flags": [ "BLIND_EASY" ],
-    "autolearn": [ [ "spellcraft", 1 ] ]
+    "autolearn": [ [ "psicraft", 1 ] ]
   },
   {
     "type": "recipe",
     "result": "psi_upgrade_2",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
-    "skills_required": [ "spellcraft", 2 ],
+    "skills_required": [ "psicraft", 2 ],
+	"components": [ [ [ "rock", 1 ] ] ],
     "difficulty": 0,
     "time": "72 h",
     "flags": [ "BLIND_EASY" ],
-    "autolearn": [ [ "spellcraft", 2 ] ]
+    "autolearn": [ [ "psicraft", 2 ] ]
   },
   {
     "type": "recipe",
     "result": "psi_upgrade_3",
     "category": "CC_OTHER",
     "subcategory": "CSC_OTHER_MATERIALS",
-    "skills_required": [ "spellcraft", 3 ],
+    "skills_required": [ "psicraft", 3 ],
+	"components": [ [ [ "rock", 1 ] ] ],
     "difficulty": 0,
     "time": "96 h",
     "flags": [ "BLIND_EASY" ],
-    "autolearn": [ [ "spellcraft", 3 ] ]
+    "autolearn": [ [ "psicraft", 3 ] ]
   }
 ]
